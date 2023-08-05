@@ -1,4 +1,3 @@
-# DeauthorizeZuzu.Git.Hub.io
 <!DOCTYPE html>
 <html>
 <head>
