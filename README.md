@@ -3,6 +3,73 @@
 <html>
 <head>
     <title>Deauthorize Callback URL</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #deauthForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 400px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #resultContainer {
+            margin-top: 20px;
+            display: none;
+        }
+
+        #resultContainer p {
+            font-size: 18px;
+        }
+
+        #resultContainer span {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Deauthorize Callback URL</h1>
@@ -12,8 +79,7 @@
         <button type="submit">Submit</button>
     </form>
     <div id="resultContainer">
-        <p>Deauthorize Callback URL:</p>
-        <p id="displayDeauthUrl">Not provided</p>
+        <p>Deauthorize Callback URL: <span id="displayDeauthUrl">Not provided</span></p>
     </div>
 
     <script>
@@ -49,3 +115,4 @@
     </script>
 </body>
 </html>
+
